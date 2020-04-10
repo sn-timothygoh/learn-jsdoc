@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Learn MERN 文档 Index</title>
+		<script src="scripts/prettify/prettify.js"></script>
+		<script src="scripts/prettify/lang-css.js"></script>
+		<script src="scripts/fuse.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css" />
+
+		<link type="text/css" rel="stylesheet" href="styles/site.simplex.css" />
+		<link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme.css" />
+		<link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css" />
+	</head>
+
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Learn MERN 文档</a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="topNavigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown"
+								>Modules<b class="caret"></b
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="module-Feed.html">Feed</a></li>
+								<li><a href="module-User.html">User</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="col-sm-3 col-md-3">
+						<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Search"
+									name="q"
+									id="search-input"
+								/>
+								<div class="input-group-btn">
+									<button class="btn btn-default" id="search-submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="toc-content">
+			<div class="row">
+				<div class="col-md-8">
+					<div id="main">
+						<section class="readme-section">
+							<article>
+								<h1>简介</h1>
+								<p>
+									该项目是由
+									<strong>SNSoft Sdn Bhd</strong>
+									推出的一项培训功课，主要培训培训生适应后端开发的环境。
+								</p>
+								<h4>MERN 是什么？</h4>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://www.mongodb.com"><strong>M</strong> ongoDB</a>
+											</td>
+											<td>跨平台文档式数据库</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://expressjs.com/en/starter/basic-routing.html"
+													><strong>E</strong> xpressJS</a
+												>
+											</td>
+											<td>JS框架，后端路由器</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://reactjs.org/docs/getting-started.html"
+													><strong>R</strong> eactJS</a
+												>
+											</td>
+											<td>前端JS框架</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://nodejs.org/en/docs/"><strong>N</strong> odeJS</a>
+											</td>
+											<td>JS 运行环境</td>
+										</tr>
+									</tbody>
+								</table>
+								<h1>使用说明</h1>
+								<blockquote>
+									<h2>使用前：</h2>
+									<blockquote>
+										<h3>组件需求</h3>
+										<blockquote>
+											<ol>
+												<li><a href="https://redis.io/download" target="_blank">Redis</a></li>
+											</ol>
+											<blockquote>
+												<p>安装成功后运行，并确保运行端口是 6379</p>
+											</blockquote>
+										</blockquote>
+									</blockquote>
+								</blockquote>
+								<blockquote>
+									<h2>系统运行：</h2>
+								</blockquote>
+								<ul>
+									<li>
+										主文件夹为 client 及 server
+										<ul>
+											<li>Client 运行（端口 3000）</li>
+										</ul>
+										<pre class="prettyprint source lang-bash"><code>    learn-mean> cd client
+    learn-mean\client> npm start
+</code></pre>
+										<ul>
+											<li>Server 运行（端口 5000）</li>
+										</ul>
+										<pre class="prettyprint source lang-bash"><code>    learn-mean> cd server
+    learn-mean\server> node server.js
+</code></pre>
+									</li>
+								</ul>
+								<h1>系统流程</h1>
+								<p>从 News Feed 界面开始</p>
+								<div
+									class="mxgraph"
+									style="max-width: 100%; border: 1px solid transparent;"
+									data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"Electron\" modified=\"2020-04-07T07:11:13.308Z\" agent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/12.9.3 Chrome/80.0.3987.158 Electron/8.2.0 Safari/537.36\" etag=\"ISybJElsLuhX_D22DPC1\" version=\"12.9.3\" type=\"device\"&gt;&lt;diagram id=\"C5RBs43oDa-KdzZeNtuy\" name=\"Page-1\"&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+								></div>
+								<script type="text/javascript" src="https://app.diagrams.net/js/viewer.min.js"></script>
+								<h1>参数参考</h1>
+								<h2>用户（User）参数</h2>
+								<table>
+									<thead>
+										<tr>
+											<th style="text-align: left;">参数</th>
+											<th style="text-align: left;">种类</th>
+											<th style="text-align: left;">必填</th>
+											<th style="text-align: left;">内容 / 注解</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="text-align: left;">_id</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">MongoDB ObjectID，用以验证用户权限</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">fname</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">是</td>
+											<td style="text-align: left;">用户名字</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">lname</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">是</td>
+											<td style="text-align: left;">用户姓氏</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">username</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">是</td>
+											<td style="text-align: left;">用户登入名，用以登录</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">pwd</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">是</td>
+											<td style="text-align: left;">用户密码，用以登录</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">createdAt</td>
+											<td style="text-align: left;">Timestamp</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">用户账号创建的时间与日期</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">updatedAt</td>
+											<td style="text-align: left;">Timestamp</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">用户账号最后更新时间与日期</td>
+										</tr>
+									</tbody>
+								</table>
+								<h2>贴文（Feeds）参数</h2>
+								<table>
+									<thead>
+										<tr>
+											<th style="text-align: left;">参数</th>
+											<th style="text-align: left;">种类</th>
+											<th style="text-align: left;">必填</th>
+											<th style="text-align: left;">内容 / 注解</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="text-align: left;">_id</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">N/A</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">user</td>
+											<td style="text-align: left;">Array</td>
+											<td style="text-align: left;">否</td>
+											<td style="text-align: left;">贴文作者OID与点赞者OID</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">upvote</td>
+											<td style="text-align: left;">Number</td>
+											<td style="text-align: left;">否</td>
+											<td style="text-align: left;">总赞数</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">downvote</td>
+											<td style="text-align: left;">Number</td>
+											<td style="text-align: left;">否</td>
+											<td style="text-align: left;">总差评数</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">content</td>
+											<td style="text-align: left;">String</td>
+											<td style="text-align: left;">是</td>
+											<td style="text-align: left;">贴文内容</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">createdAt</td>
+											<td style="text-align: left;">Timestamp</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">
+												贴文创建时间与日期，可用于计算贴文的发布时间
+											</td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">updatedAt</td>
+											<td style="text-align: left;">Timestamp</td>
+											<td style="text-align: left;">自动生成</td>
+											<td style="text-align: left;">
+												贴文最后更新时间与日期，可用于计算贴文的发布时间
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<h1>代码运作</h1>
+								<h2>用户</h2>
+								<h3>注册</h3>
+								<pre class="prettyprint source lang-js"><code>    // ./server/routes/users.js
+
+    router.route(&quot;/add&quot;).post(async (req, res) => {
+        const user = new User({
+            fname: req.body.fname,
+            lname: req.body.lname,
+            username: req.body.username,
+            pwd: req.body.password
+        });
+        try {
+            const savedUser = await user.save();
+            res.send({
+                user: savedUser._id
+            });
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(400);
+        }
+    });
+</code></pre>
+								<h5>成功注册例子</h5>
+								<pre class="prettyprint source lang-json"><code>    {
+        header: {
+            auth-header: jwt-token
+        },
+        status: 200
+    }
+
+    // 用户发出请求
+    {
+        &quot;fname&quot;: &quot;Timothy&quot;,
+        &quot;lname&quot;: &quot;Goh&quot;,
+        &quot;username&quot;: &quot;tim&quot;,
+        &quot;pwd&quot;: &quot;tim&quot;,
+    }
+
+    // MongoDB 数据存档
+    {
+        &quot;_id&quot;:{&quot;$oid&quot;:&quot;5e68e6404f907236b0cfdc1f&quot;},
+        &quot;fname&quot;:&quot;Timothy&quot;,&quot;lname&quot;:&quot;Goh&quot;,
+        &quot;username&quot;:&quot;tim&quot;,
+        &quot;pwd&quot;:&quot;$2a$10$yCPFUMcPscB5jgxzy5r/kOmG3zqGOxOEiKJuYPm3Hp9HM7/QcUkU6&quot;,
+        &quot;createdAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1583932992922&quot;}},
+        &quot;updatedAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1583932992922&quot;}}
+    }
+</code></pre>
+								<p>
+									用户密码与数据库之所以有分别是因为在前端应用了<code>bcrypt</code>来让密码复杂化，可参考<code>./client/src/pages/Timothy/components/create-user.component.js</code>。用户注册成功后将自动跳转之贴文界（News
+									Feed）。
+								</p>
+								<pre
+									class="prettyprint source lang-js"
+								><code>    // ./client/src/pages/Timothy/components/create-user.component.js
+
+    import bcrypt from &quot;bcryptjs&quot;;
+    
+    export default class CreateUser extends React.Component {
+        ...
+
+        onSubmit(e) {
+            e.preventDefault();
+            const user = {
+                fname: this.state.fname,
+                lname: this.state.lname,
+                username: this.state.username,
+                password: bcrypt.hashSync(this.state.password, bcrypt.genSalt(10))
+            }
+            ...
+        }
+    }
+</code></pre>
+								<h5>失败注册例子</h5>
+								<p>注册不能成功只源于用户提供的质询不足，返还<code>status: 400</code>。</p>
+								<h3>登录</h3>
+								<pre class="prettyprint source lang-js"><code>    // ./server/routes/users.js
+    const jwt = require('jsonwebtoken');
+    const TOKEN_SECRET = Token应用码
+
+    router.route(&quot;/login&quot;).post(async (req, res) => {
+        await User.findOne({ username: req.body.username }).then(user => {
+            if (!user) {
+                res.status(204);
+            } else {
+                bycrypt.compare(req.body.password, user.pwd).then(match => (match ？ res.sendStatus(200) : res.sendStatus(204)));
+
+                const token = jwt.sign({ _id: user._id }, TOKEN_SECRET);
+                res.header(&quot;auth-header&quot;, token);
+                res.json({ success: true, message: &quot;Logged In&quot;});
+            }
+        });
+    });
+</code></pre>
+								<p>
+									当用户发出登录请求时，系统将从搜索数据库里相应的用户名。若用户名存在数据库里，系统将会应用<code>bcrypt</code>解析数据库里的用户密码并与用户输入的密码进行对比，密码一致将成功，否者失败。
+								</p>
+								<h5>登录成功例子</h5>
+								<pre class="prettyprint source lang-json"><code>    {
+        header: {
+            auth-header: jwt-token
+        },
+        status: 200
+    }
+
+    // 用户发出请求
+    {
+        &quot;username&quot;: &quot;tim&quot;,
+        &quot;pwd&quot;: &quot;tim&quot;
+    }
+    // MongoDB 数据存档相应用户名
+    {
+        &quot;_id&quot;:{&quot;$oid&quot;:&quot;5e68e6404f907236b0cfdc1f&quot;},
+        &quot;fname&quot;:&quot;Timothy&quot;,&quot;lname&quot;:&quot;Goh&quot;,
+        &quot;username&quot;:&quot;tim&quot;,
+        &quot;pwd&quot;:&quot;$2a$10$yCPFUMcPscB5jgxzy5r/kOmG3zqGOxOEiKJuYPm3Hp9HM7/QcUkU6&quot;,
+        &quot;createdAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1583932992922&quot;}},
+        &quot;updatedAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1583932992922&quot;}}
+    }
+</code></pre>
+								<h5>登录失败例子</h5>
+								<p>登录失败只源于用户名不存在或密码错误，返还<code>status: 204</code>。</p>
+								<h2>贴文</h2>
+								<h3>贴文说明</h3>
+								<p>
+									每创建或更新一个贴文，该步骤都会进行用户验证，验证成功才可更新状态。验证所应用的部件是
+									<a href="https://www.jsonwebtoken.io" target="_blank">JSON Web Token (JWT)</a
+									>。验证步骤将会是从Headers中的<code>auth-header</code>中获得用户登录资料。若<code>auth-header</code>为空，系统将会提示通知用户更新失败并要求进行登录。
+								</p>
+								<pre class="prettyprint source lang-js"><code>    // ./server/routes/verifyToken.js
+
+    const jwt = require(&quot;jsonwebtoken&quot;);
+
+    module.exports = function (req, res, next) {
+        const token = req.header(&quot;auth-header&quot;);
+        const TOKEN_SECRET = Token应用码
+        if (!token) return res.status(401).send('Access Denied');
+        try {
+            const verified = jwt.verify(token, TOKEN_SECRET);
+            req.user = verified;
+            next();
+        } catch(err) {
+            res.status(400).send('Invalid token');
+        }
+    }
+</code></pre>
+								<h3>创建贴文</h3>
+								<pre class="prettyprint source lang-js"><code>    // ./server/routes/feed.js
+
+    const verify = require(&quot;./verifyToken&quot;);
+
+    router.post(&quot;/add&quot;, verify, async (req, res) => {
+        const feed = new Feed({
+            user: req.user._id,
+            content: req.body.content
+        });
+        try {
+            const savedFeed = await feed.save();
+            const savedFeedWithUserData = await Feed.findById(savedFeed._id).populate(&quot;user&quot;);
+            res.send(savedFeedWithUserData);
+        } catch (err) {
+            res.sendStatus(400);
+        }
+    });
+</code></pre>
+								<h5>发布贴文成功</h5>
+								<pre class="prettyprint source lang-json"><code>    {
+        &quot;header&quot;:{
+            &quot;auth-header&quot;: jwt_token
+        }
+    }
+
+    // 用户发出创建贴文请求
+    {
+        &quot;content&quot;: &quot;Stay 127.0.0.1, don't go 255.255.255.255&quot;
+    }
+
+    // MongoDB 数据库存档
+    {
+        &quot;_id&quot;:{&quot;$oid&quot;:&quot;5e8c2d690630f203e8dd47b4&quot;},
+        &quot;upvote&quot;:{&quot;$numberInt&quot;:&quot;0&quot;},
+        &quot;downvote&quot;:{&quot;$numberInt&quot;:&quot;0&quot;},
+        &quot;user&quot;:{&quot;$oid&quot;:&quot;5e68e6404f907236b0cfdc1f&quot;},
+        &quot;content&quot;:&quot;Stay 127.0.0.1, don't go 255.255.255.255&quot;,
+        &quot;createdAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1586244969523&quot;}},
+        &quot;updatedAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1586244969523&quot;}}
+    }
+
+</code></pre>
+								<h5>贴文发布失败</h5>
+								<ul>
+									<li>
+										贴文发布失败的理由如：
+										<ul>
+											<li>用户未登录</li>
+											<li>贴文内容为空</li>
+										</ul>
+									</li>
+								</ul>
+								<h3>点赞/给差评</h3>
+								<pre class="prettyprint source lang-js"><code>    // ./server/routes/feed.js
+
+    const verify = require(&quot;./verifyToken&quot;);
+
+    router.put(&quot;/updatee&quot;, verify, async (req, res) => {
+        try{
+            await Feed.findByIdAndUpdate(req.body._id, {
+                upvote: req.body.upvote,
+                downvote: req.body.downvote
+            });
+            res.send({&quot;success&quot;: true});
+        } catch { req.sendStatus(400); }
+    });
+</code></pre>
+								<h5>用户回应成功</h5>
+								<pre class="prettyprint source lang-json"><code>    {
+        &quot;header&quot;: {
+            &quot;auth-header&quot;: jwt_token
+        }
+    }
+
+    {
+        &quot;_id&quot;:{&quot;$oid&quot;:&quot;5e6b40c984ee6f5f87b42a04&quot;},
+        &quot;user&quot;:[{&quot;$oid&quot;:&quot;5e69ddb836ddf517d8f1e120&quot;}],
+        &quot;upvote&quot;:{&quot;$numberInt&quot;:&quot;0&quot;},
+        &quot;downvote&quot;:{&quot;$numberInt&quot;:&quot;1&quot;},
+        &quot;content&quot;:&quot;testing the latest release&quot;,
+        &quot;createdAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1584087241899&quot;}},
+        &quot;updatedAt&quot;:{&quot;$date&quot;:{&quot;$numberLong&quot;:&quot;1584087301497&quot;}}
+    }
+</code></pre>
+								<h5>用户回应失败</h5>
+								<ul>
+									<li>
+										用户给与回应失败的理由如：
+										<ul>
+											<li>用户未登录</li>
+											<li>用户在自己的贴问下给回应</li>
+										</ul>
+									</li>
+								</ul>
+							</article>
+						</section>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="col-md-3">
+					<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="searchResults">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<footer>
+			<span class="jsdoc-message">
+				Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a>
+
+				on 2020-04-10T16:45:52+08:00 using the
+				<a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+			</span>
+		</footer>
+
+		<script src="scripts/docstrap.lib.js"></script>
+		<script src="scripts/toc.js"></script>
+
+		<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+		<script>
+			$(function () {
+				$("[id*='$']").each(function () {
+					var $this = $(this);
+
+					$this.attr('id', $this.attr('id').replace('$', '__'));
+				});
+
+				Sunlight.highlightAll({
+					lineNumbers: false,
+					showMenu: true,
+					enableDoclinks: true,
+				});
+
+				$.catchAnchorLinks({
+					navbarOffset: 10,
+				});
+				$('#toc').toc({
+					anchorName: function (i, heading, prefix) {
+						return $(heading).attr('id') || prefix + i;
+					},
+					selectors: '#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4',
+					showAndHide: false,
+					smoothScrolling: true,
+				});
+
+				$("#main span[id^='toc']").addClass('toc-shim');
+				$('.dropdown-toggle').dropdown();
+
+				$('table').each(function () {
+					var $this = $(this);
+					$this.addClass('table');
+				});
+			});
+		</script>
+
+		<!--Navigation and Symbol Display-->
+
+		<!--Google Analytics-->
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				SearcherDisplay.init();
+			});
+		</script>
+		<script type="text/javascript" src="scripts/misc.js"></script>
+		<script>
+			prettyPrint();
+		</script>
+	</body>
+</html>
